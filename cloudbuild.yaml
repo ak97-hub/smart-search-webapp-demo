@@ -10,4 +10,4 @@ steps:
   entrypoint: gcloud
   args: ['run', 'deploy', 'smart-search-webapp-demo', '--image', 'gcr.io/885327215833/smart-search-webapp-demo', '--region', 'us-central1', '--platform', 'managed','--port','80']
 images:
-- gcr.io/$885327215833/smart-search-webapp-demo
+- gcr.io/885327215833/smart-search-webapp-demo
