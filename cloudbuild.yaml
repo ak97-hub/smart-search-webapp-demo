@@ -4,7 +4,7 @@ steps:
   args: ['build', '-t', 'gcr.io/smart-search-project/smart-search-webapp-demo', '.']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/smart-search-project/smart-search-webapp-demo']
+  args: ['push', 'gcr.io/$PROJECT_ID/smart-search-webapp-demo']
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
