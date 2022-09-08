@@ -23,7 +23,8 @@ app = Flask(__name__)
 def home():
     response = aip_client.predict(endpoint=aip_endpoint_name,
                                   instances=['first', 'second', 'third'])
-    return str(response[0])  # render_template('index.html')
+    print(response)
+    return render_template('index.html')
 
 
 # run server
