@@ -1,0 +1,16 @@
+0000000000000000000000000000000000000000 639fcad4a3957d05ff95bfe5c176a079b9f28973 angelo <angelokhan.j@gmail.com> 1662585492 -0400	branch: Created from HEAD
+639fcad4a3957d05ff95bfe5c176a079b9f28973 134925af7481d95bfd27f77eef6b6f99a8d97c8e angelo <angelokhan.j@gmail.com> 1662585557 -0400	commit: chnage templates
+134925af7481d95bfd27f77eef6b6f99a8d97c8e f19fb65b94da927532995f4eb3e4b7e1c94bf1e9 angelo <angelokhan.j@gmail.com> 1662585720 -0400	commit: change with project ID
+f19fb65b94da927532995f4eb3e4b7e1c94bf1e9 34cd2ed560b0c522da9709f30866ac279a8e30b2 angelo <angelokhan.j@gmail.com> 1662586132 -0400	commit: templates updated
+34cd2ed560b0c522da9709f30866ac279a8e30b2 e10701db4877d377c6bb9c6a98c1193d0d462094 angelo <angelokhan.j@gmail.com> 1662588853 -0400	commit: Change PROJECT_ID
+e10701db4877d377c6bb9c6a98c1193d0d462094 6b6ed0ab56be48bf634d51d3957894820f7860c6 angelo <angelokhan.j@gmail.com> 1662589170 -0400	commit: Change product ID's
+6b6ed0ab56be48bf634d51d3957894820f7860c6 baa3324f3c55a922d6b54741633e9262767e1cb9 angelo <angelokhan.j@gmail.com> 1662594001 -0400	commit: change app by adding aip_endpoints, and REPO to cloud build
+baa3324f3c55a922d6b54741633e9262767e1cb9 08c6f024b77b94d6d89f48631e0c4a27b8ae61c8 angelo <angelokhan.j@gmail.com> 1662594161 -0400	commit: 4.0 in html
+08c6f024b77b94d6d89f48631e0c4a27b8ae61c8 3262c42d0b886b3baf3a055f5c2ed30abf8e98ec angelo <angelokhan.j@gmail.com> 1662594289 -0400	commit: cloud build changed repo back
+3262c42d0b886b3baf3a055f5c2ed30abf8e98ec 02399e16ff7bd0b9497a9f0782cfcc5dec67298a angelo <angelokhan.j@gmail.com> 1662594516 -0400	commit: updated requirements.txt
+02399e16ff7bd0b9497a9f0782cfcc5dec67298a ed2e40f1b541d68a84af8e5054b3511169314a86 angelo <angelokhan.j@gmail.com> 1662594811 -0400	commit: Update python version
+ed2e40f1b541d68a84af8e5054b3511169314a86 7dfd990647751e669be5b4a38a459d5634229e3b angelo <angelokhan.j@gmail.com> 1662595650 -0400	commit: add in prediction element
+7dfd990647751e669be5b4a38a459d5634229e3b aafc9c780fae159ed40219ceabd6ae5fd5d4598d angelo <angelokhan.j@gmail.com> 1662595871 -0400	commit: Add in response as html output
+aafc9c780fae159ed40219ceabd6ae5fd5d4598d e3d0bd62cf57abbdecd17d06dbe6001c0dae9221 angelo <angelokhan.j@gmail.com> 1662599523 -0400	commit: change to print response
+e3d0bd62cf57abbdecd17d06dbe6001c0dae9221 05336f02c51f3219dcf11b1f04803eb7198e9d96 angelo <angelokhan.j@gmail.com> 1662599929 -0400	commit: Add get prediction function
+05336f02c51f3219dcf11b1f04803eb7198e9d96 b4e55dbee19a9fc2db48da56c6e8815504204a39 angelo <angelokhan.j@gmail.com> 1662600324 -0400	commit: add in get_prediction print statements
