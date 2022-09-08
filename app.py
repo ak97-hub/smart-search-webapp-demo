@@ -21,6 +21,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    response = aip_client.predict(endpoint=aip_endpoint_name,
+                                  instances=['first', 'second', 'third'])
     return render_template('index.html')
 
 
