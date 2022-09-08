@@ -17,15 +17,15 @@ aip_endpoint_name = f'projects/{os.environ["PROJECT_ID"]}/locations/us-central1/
 
 
 def get_prediction(instances):
-    logging.info('Sending prediction request to AI Platform ...')
+    print('Sending prediction request to AI Platform ...')
     try:
-        logging.info('Logging instance ...' + str(instances))
+        print('Logging instance ...' + str(instances))
         response = aip_client.predict(endpoint=aip_endpoint_name,
                                       instances=instances)
-        logging.info('Logging Response ...' + str(response))
+        print('Logging Response ...' + str(response))
         return list(response.predictions)
     except Exception as err:
-        logging.error(f'Prediction request failed: {type(err)}: {err}')
+        print(f'Prediction request failed: {type(err)}: {err}')
         return None
 
 
@@ -35,7 +35,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     response = get_prediction(instances=['first', 'second', 'third'])
-    print(str(response))
+    print(response)
     return render_template('index.html')
 
 
