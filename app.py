@@ -16,14 +16,26 @@ aip_client = aiplatform.gapic.PredictionServiceClient(client_options={
 aip_endpoint_name = f'projects/{os.environ["PROJECT_ID"]}/locations/us-central1/endpoints/{os.environ["ENDPOINT_ID"]}'
 
 
+def get_prediction(instances):
+    logging.info('Sending prediction request to AI Platform ...')
+    try:
+        logging.info('Logging instance ...' + str(instances))
+        response = aip_client.predict(endpoint=aip_endpoint_name,
+                                      instances=instances)
+        logging.info('Logging Response ...' + str(response))
+        return list(response.predictions)
+    except Exception as err:
+        logging.error(f'Prediction request failed: {type(err)}: {err}')
+        return None
+
+
 app = Flask(__name__)
 
 
 @app.route('/')
 def home():
-    response = aip_client.predict(endpoint=aip_endpoint_name,
-                                  instances=['first', 'second', 'third'])
-    print(response)
+    response = get_prediction(instances=['first', 'second', 'third'])
+    print(str(response))
     return render_template('index.html')
 
 
