@@ -11,9 +11,9 @@ import requests
 
 
 aip_client = aiplatform.gapic.PredictionServiceClient(client_options={
-    'api_endpoint': 'us-central1-aiplatform.googleapis.com'
+    'api_endpoint': f'{os.environ["LOCATION"]}-aiplatform.googleapis.com'
 })
-aip_endpoint_name = f'projects/{os.environ["PROJECT_ID"]}/locations/us-central1/endpoints/{os.environ["ENDPOINT_ID"]}'
+aip_endpoint_name = f'projects/{os.environ["PROJECT_ID"]}/locations/{os.environ["LOCATION"]}/endpoints/{os.environ["ENDPOINT_ID"]}'
 
 
 def get_prediction(instances):
